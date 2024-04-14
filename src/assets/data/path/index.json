@@ -1,0 +1,40 @@
+{
+    "obsProducts": [
+        {
+            "name": "广东省实况",
+            "href": "/#/observation"
+        },
+        {
+            "name": "深圳市实况",
+            "href": "#"
+        },
+        {
+            "name": "雷达数据",
+            "href": "#"
+        }
+    ],
+    "mapProducts": [
+        {
+            "name": "综合面板",
+            "href": "/#/map"
+        },
+        {
+            "name": "TyphoonMap",
+            "href": "#"
+        }
+    ],
+    "otherProdcuts": [
+        {
+            "label": "使用说明",
+            "href": ""
+        },
+        {
+            "label": "深圳气象录",
+            "href": ""
+        },
+        {
+            "label": "数值预报",
+            "href": "/#/models"
+        }
+    ]
+}

@@ -13,6 +13,36 @@ const router = createRouter({
                 import('../components/common/Index.vue')
         }]
     },
+    {
+        path: '/observation',
+        component: () =>
+            import('../components/common/Header.vue'),
+        children: [{
+            path: '',
+            component: () =>
+                import('../components/common/Observation.vue')
+        }]
+    },
+    {
+        path: '/models',
+        component: () =>
+            import('../components/common/Header.vue'),
+        children: [{
+            path: '',
+            component: () =>
+                import('../components/common/Models.vue')
+        }]
+    },
+    {
+        path: '/map',
+        component: () =>
+            import('../components/common/Header.vue'),
+        children: [{
+            path: '',
+            component: () =>
+                import('../components/map/inletMap.vue')
+        }]
+    },
     ]
 })
 

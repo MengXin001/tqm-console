@@ -15,8 +15,8 @@
                 </button>
             </div>
             <PopoverGroup class="hidden lg:flex lg:gap-x-12">
-                <Popover :Data="obsProducts" Title="实况数据"/>
-                <Popover :Data="mapProducts" Title="地图"/>
+                <Popover :Data="obsProducts" Title="实况数据" />
+                <Popover :Data="mapProducts" Title="地图" />
                 <a v-for="item in Menu" :href="item.href" class="text-sm font-semibold leading-6 text-gray-900">{{
                         item.label }}</a>
             </PopoverGroup>
@@ -51,12 +51,9 @@
                                         {{ item.name }}</DisclosureButton>
                                 </DisclosurePanel>
                             </Disclosure>
-                            <a href="#"
-                                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
-                            <a href="#"
-                                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
-                            <a href="#"
-                                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
+                            <a v-for="item in Menu" :href="item.href"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">{{
+                        item.label }}</a>
                         </div>
                     </div>
                 </div>
@@ -83,14 +80,11 @@ import {
 } from '@heroicons/vue/24/outline'
 import { ChevronDownIcon } from '@heroicons/vue/20/solid'
 
-const obsProducts = [
-    { name: '广东省实况', href: '#' },
-    { name: '深圳市实况', href: '#' },
-    { name: '雷达数据', href: '#' },
-]
-const mapProducts = [
-    { name: '综合面板', href: '#' },
-    { name: 'TyphoonMap', href: '#' }]
-const Menu = [{ label: '使用说明', href: '' }, { label: '深圳气象录', href: '' }, { label: '数值预报', href: '' }]
+import Products from '../../assets/data/path/index.json'
+
+const obsProducts = Products.obsProducts
+const mapProducts = Products.mapProducts
+const Menu = Products.otherProdcuts
+
 const mobileMenuOpen = ref(false)
 </script>
