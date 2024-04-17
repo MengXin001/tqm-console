@@ -34,6 +34,7 @@
 </template>
 <script setup>
 import { ref } from 'vue';
+
 const tabList = [
     {
         key: 'tab1',
@@ -46,12 +47,8 @@ const tabList = [
 ];
 const input = ref('');
 const key = ref('tab1');
-const noTitleKey = ref('app');
 const onTabChange = (value, type) => {
     if (type === 'key') {
         key.value = value;
-    } else if (type === 'noTitleKey') {
-        noTitleKey.value = value;
-    }
-};
+    }}
 </script>

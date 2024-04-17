@@ -40,7 +40,17 @@ const router = createRouter({
         children: [{
             path: '',
             component: () =>
-                import('../components/map/inletMap.vue')
+                import('../components/map/baseMap.vue')
+        }]
+    },
+    {
+        path: '/radar',
+        component: () =>
+            import('../components/common/Header.vue'),
+        children: [{
+            path: '',
+            component: () =>
+                import('../components/common/Radar.vue')
         }]
     },
     ]
