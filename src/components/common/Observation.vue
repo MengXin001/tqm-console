@@ -84,21 +84,9 @@
         </div>
     </div>
 </template>
-<script setup>
-const productOptions = [
-    { label: '降水1小时', value: 'rain/rain_60_jcw.json' },
-    { label: '降水3小时', value: 'rain/rain_180_jcw.json' },
-    { label: '降水24小时', value: 'rain/rain_1440_jcw.json' },
-    { label: '降水48小时', value: 'rain/rain_2880_jcw.json' },
-    { label: '气温', value: 'temperature/temperature_jcw.json' },
-    { label: '相对湿度', value: 'humidity/humidity_jcw.json' },
-    { label: '雷电监测', value: 'lightningQbl/lightning_jcw.json' },
-    { label: '风况', value: 'wind/wind_jcw.json' },
-    { label: '能见度', value: 'visibility/visibility_jcw.json' }
-]
-</script>
 <script>
 import { defineComponent, ref } from "vue";
+import productOptions from '../../assets/data/products/observationSZ.json'
 import axios from "axios";
 import {
     RadioGroup,

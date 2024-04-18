@@ -50,7 +50,7 @@ const router = createRouter({
         children: [{
             path: '',
             component: () =>
-                import('../components/common/Radar.vue')
+                import('../components/common/Radar/Radar.vue')
         }]
     },
     ]

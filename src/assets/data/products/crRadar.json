@@ -1,0 +1,20 @@
+{
+    "crProducts": [
+        {
+            "label": "广东组合反射率",
+            "value": "1"
+        },
+        {
+            "label": "广东3km CAPPI",
+            "value": "2"
+        },
+        {
+            "label": "广东相控阵组合反射率",
+            "value": "3"
+        },
+        {
+            "label": "东莞相控阵组合反射率",
+            "value": "4"
+        }
+    ]
+}
